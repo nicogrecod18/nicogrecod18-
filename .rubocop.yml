@@ -1,0 +1,24 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/bundle'
+    - !ruby/regexp /old_and_unused\.rb$/
+
+require: rubocop-rails
+
+Layout/LineLength:
+  Max: 99
+
+Layout/IndentationStyle:
+  EnforcedStyle: spaces
+
+Layout/IndentationWidth:
+  Width: 4
+
+Style/Documentation:
+  Enabled: false
+
+
+
